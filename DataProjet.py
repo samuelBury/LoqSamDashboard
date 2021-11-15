@@ -5,11 +5,10 @@ import plotly.graph_objs as go
 df = pd.read_csv('ALL UFC FIGHTERS 2_23_2016 SHERDOG.COM - Sheet1.csv')
 
 trace = go.Scatter(
-x=asia1992['mortality'],
-y=asia1992['fertility'],
+x=nom['name'],
+y=localisation['locality'],
 mode='markers',)
 
 
->>> data = [trace]
+data = [trace]
 
-print(df)
